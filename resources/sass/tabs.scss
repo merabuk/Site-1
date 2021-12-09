@@ -1,0 +1,124 @@
+.nav-tabs{
+  margin-bottom: 20px;
+  width: 100%;
+  .nav-link{
+    color:#1D1D1D;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 0.5rem 0.6rem;
+    font-weight: 400;
+  }
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link{
+  background-color: transparent;
+  border-color: transparent;
+  color:#FF8200;
+  border-bottom: 1px solid #FF8200;
+
+}
+
+.brand-wrapper {
+  //position: relative;
+  //
+  //&::before, &::after {
+  //  content: '';
+  //  display: block;
+  //  position: absolute;
+  //  width: 20px;
+  //  height: 20px;
+  //  top: 0;
+  //  background-color: red;
+  //}
+  //&::before {
+  //  left: -20px;
+  //}
+  //&::after {
+  //  right: -20px;
+  //}
+
+  .nav-pills {
+    //display: flex;
+    //flex-wrap: nowrap;
+    //grid-gap: 20px;
+    //height: 100px;
+    margin: 0 20px 20px;
+  }
+  .nav-link {
+    min-width: calc(50% - 30px);
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    outline: none;
+
+    .img {
+      width: auto;
+      height: 55px;
+      max-width: 110%;
+      //height: auto;
+      //padding: 3px;
+      //display: block;
+    }
+    .img-orange{
+      display: none;
+    }
+    &.active {
+      background-color: transparent;
+      border-color: #ff8200;
+      .img{
+        display: none;
+        &.img-orange{
+          display: block;
+        }
+      }
+    }
+  }
+}
+.section-admin .nav-tabs .nav-link{
+  text-transform: none;
+}
+@media(min-width: 768px){
+  .nav-tabs .nav-link {
+    font-size: 17px;
+  }
+  .brand-wrapper .nav-link .img {
+    width: auto;
+    height: 85px;
+    max-width: 110%;
+  }
+}
+@media(min-width: 992px){
+  .nav-tabs{
+    margin-bottom: 20px;
+    .nav-link{
+      font-size: 18px;
+      font-family: Roboto, sans-serif;
+    }
+  }
+  .brand-wrapper {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 360px auto;
+    grid-gap: 50px;
+    .nav-pills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      margin: 0 0 20px;
+    }
+    .nav-link {
+      min-width: unset;
+      margin: 0;
+      height: 100%;
+      .img {
+        height: 65px;
+        width: 100%;
+      }
+    }
+  }
+}

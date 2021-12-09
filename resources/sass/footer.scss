@@ -1,0 +1,132 @@
+footer{
+  background-color: #1D1D1D;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 21px;
+  padding: 40px 0 25px;
+  font-weight: 400;
+  a{
+    color: #FFFFFF;
+    &:hover{
+      color: #FF8200;
+    }
+  }
+  .title-footer{
+    color: #FF8200;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+  }
+  .icon{
+    align-items: baseline;
+    margin-top: 3px;
+  }
+  .list-location{
+    >li{
+      display: flex;
+      margin-bottom: 10px;
+
+    }
+  }
+  .section-footer{
+    padding: 0 20px;
+  }
+  .bottom-text{
+    text-align: center;
+    margin-top: 35px;
+    font-weight: 300;
+  }
+}
+
+.footer-tabs-dillers{
+  font-weight: 300;
+  .nav-tabs .nav-item{
+    border-bottom: 1px solid #919090;
+    flex: 1 0 auto;
+    .nav-link{
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 0.5rem;
+    }
+    .nav-link.active{
+      background-color: transparent;
+      color: #FF8200;
+      border-color: transparent;
+      border-bottom: 1px solid #FF8200;
+      //width: min-content
+    }
+  }
+}
+
+
+@media(min-width: 768px){
+  footer{
+    .top-block-footer{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .title-footer{
+      text-align: left;
+    }
+    .section-footer{
+      padding: 10px;
+    }
+  }
+  .footer-tabs-dillers{
+    .content-tab{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 35px;
+      flex-wrap: wrap;
+      .section-footer{
+        width: 33.33%;
+      }
+    }
+    .nav-tabs .nav-item{
+      //width: 25%;
+    }
+  }
+}
+
+@media(min-width: 992px){
+  footer {
+    font-size: 17px;
+    line-height: 25px;
+    .top-block-footer{
+      .section-footer{
+        padding: 0;
+      }
+    }
+    .bottom-block-footer {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .title-footer{
+      font-size: 20px;
+      min-width: max-content;
+    }
+  }
+  .footer-tabs-dillers{
+    flex: 1 0 auto;
+    margin-left: 20px;
+    .nav-tabs{
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      .nav-item{
+        width: auto;
+        .nav-link{
+          font-size: 18px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

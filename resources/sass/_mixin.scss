@@ -1,0 +1,18 @@
+@mixin icon ($name, $options: $default-icon-options) {
+  $width: map_get($options, width);
+  $height: map_get($options, height);
+  content: '';
+  display: block;
+  width: $width;
+  min-width: $width;
+  height: $height;
+  min-height: $height;
+  margin: map_get($options, margin-top) map_get($options, margin-right) map_get($options, margin-bottom) map_get($options, margin-left);
+  background: url($icons-path + $name + '.' + map_get($options, format)) no-repeat center;
+
+  @if map_get($options, landscape) {
+    background-size: 100% auto;
+  } @else {
+    background-size: auto 100%;
+  }
+}

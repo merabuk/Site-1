@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+
+  # Turn Off mod_dir Redirect For Existing Directories
+  DirectorySlash Off
+
+  # Rewrite For Public Folder
+  RewriteEngine on
+  RewriteRule ^(.*)$ public/$1 [L]
+
+</IfModule>
+
+<IfModule mod_expires.c>
+# Turn ON Cache
+    ExpiresActive On
+    ExpiresByType application/javascript  "access plus 2 days"
+    ExpiresByType text/javascript  "access plus 2 days"
+    ExpiresByType text/css "access  plus 2 days"
+    ExpiresByType image/jpeg  "access plus 2 days"
+    ExpiresByType image/jpg  "access plus 2 days"
+    ExpiresByType image/png  "access plus 2 days"
+    ExpiresByType image/svg+xml  "access plus 2 days"
+</IfModule>

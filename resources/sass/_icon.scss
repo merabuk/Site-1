@@ -1,0 +1,469 @@
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: transform .4s ease-in;
+  >:not(:first-child) {
+    display: block;
+    padding-left: 1rem;
+    flex: 1 1 auto;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '' ;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.icon-maps:before{
+  background-image: url("../images/icons/maps-and-flags.svg");
+  width: 11px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.icon-house:before{
+  background-image: url("../images/icons/icon-house.svg");
+  width: 15px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.icon-phone:before{
+  background-image: url("../images/icons/icon-phone.svg");
+  width: 13px;
+  height: 13px;
+  margin-right: 10px;
+}
+.icon-mail:before{
+  background-image: url("../images/icons/icon-mail.svg");
+  width: 14px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.icon-global:before{
+  background-image: url("../images/icons/icon-global.svg");
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.icon-bag:before{
+  background-image: url("../images/icons/icon-shopping-bag-black.svg");
+  width: 9px;
+  height: 10px;
+}
+
+.icon-bag-orange:before{
+  display: inline-block;
+  content: '' ;
+  background-image: url("../images/icons/shopping-bag-orange.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 15px;
+  margin-left: 10px;
+}
+.icon-close{
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/icon-close.svg");
+    width: 13px;
+    height: 13px;
+  }
+}
+.icon-basket{
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/icon-basket.svg");
+    width: 17px;
+    height: 15px;
+    margin: 0 auto;
+    line-height: 37px;
+  }
+  &:hover{
+    &:before{
+      background-image: url("../images/icons/icon-basket-orange.svg");
+    }
+
+  }
+}
+
+.icon-like{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/icon-like-border.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+  }
+  &:hover{
+    &:before{
+      background-image: url("../images/icons/icon-like-color.svg");
+    }
+  }
+}
+.icon-like-black{
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/icon-like-black.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 13px;
+  }
+}
+.icon-arrow-btn-right{
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/arrow-btn-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 7px;
+  }
+}
+
+.icon-shipping{
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/shipped.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+
+.icon-shield{
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/shield.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 18px;
+    margin-right: 12px;
+  }
+}
+
+.icon-arrow-select:after{
+  content: '';
+  background-image: url("../images/icons/arrow-down-select.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 5px;
+  border: none;
+  min-width: 10px;
+}
+.icon-phone-circle:before{
+  content: '';
+  background-image: url("../images/icons/icon-phone-circle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+.icon-hand:before{
+  content: '';
+  background-image: url("../images/icons/icon-hand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 82px;
+  height: 80px;
+}
+.icon-logo-modal{
+  //position: absolute;
+  //top: 10px;
+  //right: 10px;
+  &:before{
+    display: block;
+    content: '';
+    background-image: url("../images/icons/logo-modal.svg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 200px;
+    background-position-y: bottom;
+    background-position-x: center;
+    margin: 0 auto;
+  }
+}
+
+
+.icon-like-active{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  &:before{
+    display: block;
+    content: '' ;
+    background-image: url("../images/icons/icon-like-color.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+  }
+}
+.icon-arrow-down:before{
+  display: block;
+  content: '' ;
+  background-image: url("../images/icons/icon-arrow-down.svg");
+  width: 18px;
+  height: 9px;
+  margin: 0 auto;
+}
+.icon-add:before{
+  display: block;
+  content: '' ;
+  background-image: url("../images/icons/icon-add.svg");
+  width: 33px;
+  height: 33px;
+  margin: 0 auto;
+}
+.icon-user:before {
+  background-image: url("../images/icons/user.svg");
+  width: 11px;
+  height: 15px;
+}
+.icon-sing-out:before {
+  background-image: url("../images/icons/sign-out-alt-solid.svg");
+  width: 11px;
+  height: 15px;
+}
+.icon-card:before {
+  background-image: url("../images/icons/address-card-regular.svg");
+  width: 11px;
+  height: 15px;
+}
+
+.icon-user-active:before {
+  background-image: url("../images/icons/user-color.svg");
+  width: 24px;
+  height: 27px;
+}
+.icon-phone-white:before {
+  background-image: url("../images/icons/icon-phone-white.svg");
+  width: 11px;
+  height: 15px;
+}
+.icon-favorite-heart-white:before {
+  background-image: url("../images/icons/icon-favorite-heart-white.svg");
+  width: 11px;
+  height: 15px;
+}
+
+.icon-menu-button-white:before {
+  background-image: url("../images/icons/menu-button-white.svg");
+  width: 19px;
+  height: 13px;
+}
+
+.icon-menu-button:before {
+  background-image: url("../images/icons/menu-button.svg");
+  width: 19px;
+  height: 13px;
+}
+
+.icon-sidenav-logo:before {
+  background-image: url("../images/icons/sidenav-logo.svg");
+  width: 64px;
+  height: 30px;
+}
+.icon-quit:before {
+  background-image: url("../images/icons/quit.svg");
+  width: 11px;
+  height: 11px;
+}
+
+.icon-quit:before {
+  background-image: url("../images/icons/quit.svg");
+  width: 11px;
+  height: 11px;
+}
+
+.icon-search:before {
+  background-image: url("../images/icons/search.svg");
+  width: 9.5px;
+  height: 9.5px;
+}
+
+.icon-next:before {
+  background-image: url("../images/icons/scrollarrowtoright.svg");
+  width: 5px;
+  height: 8px;
+  margin-left: 10px;
+}
+.icon-next-white:before {
+  background-image: url("../images/icons/scrollarrowtoright-white.svg");
+  width: 5px;
+  height: 8px;
+  margin-left: 10px;
+}
+.icon-prev:before {
+  background-image: url("../images/icons/scrollarrowtoleft.svg");
+  width: 5px;
+  height: 8px;
+  margin-right: 10px;
+}
+
+.icon-eye:before{
+  display: block;
+  content: '' ;
+  background-image: url("../images/icons/icon-eye.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 13px;
+  margin: 0 auto;
+}
+
+.icon-clock:before{
+  display: block;
+  content: '' ;
+  background-image: url("../images/icons/icon-clock.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.icon-error{
+  display: block;
+  content: '' ;
+  background-image: url("../images/icons/icon-error.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 14px;
+  margin-right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 17px;
+}
+.icon-delete{
+  display: block;
+  content: '' ;
+  background-image: url("../images/icons/icon-delete.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 20px;
+}
+
+@media(min-width: 768px) {
+  .icon-error{
+    top: 15px;
+  }
+  .icon-hand:before{
+    width: 106px;
+    height:103px;
+  }
+}
+@media(min-width: 992px) {
+  .icon-phone-circle:before{
+    width: 78px;
+    height: 78px;
+  }
+  .icon-arrow-btn-right{
+    &:before{
+      width: 8px;
+      height: 13px;
+    }
+  }
+  .icon-delete {
+    display: block;
+    content: '';
+    background-image: url("../images/icons/icon-delete.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 33px;
+  }
+  .icon-logo-modal{
+    //position: absolute;
+    //top: 10px;
+    //right: 10px;
+    &:before{
+      display: block;
+      content: '';
+      background-image: url(../images/icons/logo-modal.svg);
+      background-size: 130%;
+      background-repeat: no-repeat;
+      width: 350px;
+      height: 300px;
+      background-position-y: bottom;
+      background-position-x: center;
+      margin: 0 auto;
+    }
+  }
+  .icon-shipping{
+    &:before{
+      width: 26px;
+      height: 16px;
+    }
+  }
+  .icon-bag:before{
+    width: 12px;
+    height: 15px;
+  }
+  .icon-basket:before{
+    width: 19px;
+    height: 18px;
+  }
+  .icon-like{
+    top: 13px;
+    right: 13px;
+    &:before{
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .icon-like-active{
+    top: 13px;
+    right: 13px;
+    &:before{
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .icon-add:before{
+    width: 56px;
+    height: 56px;
+  }
+  .icon-phone-white:before {
+    width: 16.5px;
+    height: 16.5px;
+    margin-right: 10px;
+  }
+  .icon-clock:before{
+    width: 19px;
+    height: 19px;
+  }
+  .icon-like-black:before {
+    width: 16px;
+    height: 15px;
+  }
+  .icon-bag-orange:before {
+    width: 13px;
+    height: 18px;
+  }
+}

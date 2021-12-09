@@ -1,0 +1,68 @@
+$images-path: './../images/';
+$icons-path: $images-path + 'icon/';
+
+// colors
+$light: #FFFFFF;
+$dark: #212121;
+$red: #FF0000;
+$success: #68BF5F;
+$input-bg: #F5F5F5;
+$calculator-bg: #F4F9FC;
+
+// icon
+$default-icon-options: (
+        width: 2.15rem,
+        height: 2.15rem,
+        format: 'svg',
+        margin-top: 0,
+        margin-right: 0,
+        margin-bottom: 0,
+        margin-left: 0,
+        landscape: false,
+) !default;
+
+$grid-breakpoints: (
+        xxxs: 0,
+        xxs: 320px,
+        //xs: 568px,
+        xs: 414px,
+        sm: 667px,
+        md: 768px,
+        lg: 992px,
+        xl: 1300px,
+        //xxl: 1440px,
+);
+
+$grid-breakpoints2: (
+        xxxs: 0,
+        xxs: 320px,
+        //xs: 568px,
+        xs: 414px,
+        sm: 667px,
+        md: 768px,
+
+);
+
+$container-max-widths: (
+        xxs: 315px,
+        xs: 100%,
+        md: 750px,
+        lg: 992px,
+        xl: 1170px,
+);
+
+// font
+$default-font-size: 15px;
+$default-line-height: 25px;
+$exo-2-font-family: 'Exo 2', sans-serif;
+$default-font-family: 'Roboto', sans-serif;
+
+$weight-thin: 100;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+
+// shadow
+$box-shadow-color: rgba(0, 0, 0, 0.1);
