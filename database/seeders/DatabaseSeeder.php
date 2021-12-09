@@ -28,12 +28,12 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CategorySeeder::class,
             BrandSeeder::class,
-            //ProductSeeder::class,
+            ProductSeeder::class,
             FrontPageSeeder::class,
             ArticleSeeder::class,
             FilterSeeder::class,
             StatusSeeder::class,
-            //MainPageSeeder::class,
+            MainPageSeeder::class,
         ]);
     }
 }
